@@ -9,7 +9,7 @@
         <a href="@Url.Action("Details", "CheckingAccount")" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-question-sign"></span> Kontojääk</a>
     </div>
     <div class="col-md-6 margin-top-20">
-        <a href="#" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-print"></span> Trüki tšekk</a>
+        <a href="@Url.Action("Statement", "CheckingAccount", new { id=ViewBag.CheckingAccountId })" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-print"></span> Trüki tšekk</a>
         <a href="#" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-transfer"></span> Ülekanne</a>
         <a href="@Url.Action("Deposit", "Transaction", new { checkingAccountId = ViewBag.CheckingAccountId })" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-circle-arrow-up"></span> Raha sisse</a>
     </div>

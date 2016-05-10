@@ -42,7 +42,7 @@ namespace AutomatedTellerMachine.Controllers
         {
             ViewBag.TheMessage = "Aitäh, saime sinu teate kätte!";
 
-            return View();
+            return PartialView("_ContactThanks"); // Alljoon nime ees on konventsioon
         }
 
         // GET: /Home/Test saadab ära /Home/About lehele
