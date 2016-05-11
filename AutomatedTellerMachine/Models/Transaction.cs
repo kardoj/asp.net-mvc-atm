@@ -12,9 +12,11 @@ namespace AutomatedTellerMachine.Models
 
         [Required]
         [DataType(DataType.Currency)]
+        [Display(Name = "Summa")]
         public decimal Amount { get; set; }
 
         [Required]
+        [Display(Name = "Kontonumber")]
         public int CheckingAccountId { get; set; }
 
         // Võimaldab seotud konto andmeid küsida

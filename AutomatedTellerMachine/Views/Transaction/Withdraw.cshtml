@@ -1,10 +1,10 @@
 ﻿@model AutomatedTellerMachine.Models.Transaction
 
 @{
-    ViewBag.Title = "Raha sisse";
+    ViewBag.Title = "Raha välja";
 }
 
-<h2>Raha sisse</h2>
+<h2>@ViewBag.Title</h2>
 
 
 @using (Html.BeginForm()) 
@@ -24,7 +24,7 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Sisesta" class="btn btn-default" />
+                <input type="submit" value="Väljasta" class="btn btn-default" />
             </div>
         </div>
     </div>

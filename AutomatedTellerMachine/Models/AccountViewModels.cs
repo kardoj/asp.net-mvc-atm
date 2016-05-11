@@ -55,10 +55,10 @@ namespace AutomatedTellerMachine.Models
 
         [Required]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "Parool")]
         public string Password { get; set; }
 
-        [Display(Name = "Remember me?")]
+        [Display(Name = "Pea mind meeles?")]
         public bool RememberMe { get; set; }
     }
 
